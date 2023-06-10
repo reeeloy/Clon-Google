@@ -1,0 +1,246 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: black; 
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6vh;
+    margin-left: 86%;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+#imagen-header {
+    width: 26px;
+    height: 26px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+#imagen-header2 {
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+#imagen-header:hover,
+#imagen-header2:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13rem;
+    margin-bottom: 21rem;
+}
+
+.texto-centrado {
+    text-align: center;
+    color: black;
+    margin-top: -310px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.texto-centrado p {
+    display: inline;
+    position: relative;
+}
+
+.texto-centrado p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.texto-centrado #idioma:hover::after {
+    background-color: transparent;
+}
+
+.texto-centrado #idioma {
+    text-decoration: none;
+    color: #1A0DAB;
+    cursor: pointer;
+}
+
+.texto-centrado #idioma::after {
+    content: none;
+}
+
+#logo {
+    height: 95px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: -15px;
+}
+
+input.busqueda {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 560px;
+    height: 45px;
+    border: 1px solid #DFE1E5;
+    color: black;
+    background-image: url(icone-loupe-gris.png), url(Google_Lens_Icon.svg.png), url(Microfono_multicolor_Google.png);
+    background-size: 18px, 23px, 32px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 15px center, right 10px center, right 40px center;
+    padding-left: 5%;
+    text-indent: 22px;
+}
+
+input.busqueda:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input.busqueda:focus {
+    outline: none;
+}
+
+input.busqueda:hover ~ #microfono::after {
+    content: "Búsqueda por voz";
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+
+button {
+    background-color: #F8F9FA;
+    border: none;
+    color: black;
+    height: 36px;
+    padding: 0 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+button:hover {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.centrado {
+    text-align: center;
+}
+
+#padding {
+    padding-bottom: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #85758D
+}
+
+.footer-top li {
+    list-style: none;
+    margin-left: -45px;
+}
+
+.footer-top a:hover {
+    cursor: default;
+}
+
+.footer-container {
+    margin-top: -20px; 
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 630px) {
+    input.busqueda {
+        width: 284px;
+    }
+}
